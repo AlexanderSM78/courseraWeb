@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: beige;
+    color: coral;
+    padding: 5px 20px 5px 20px;
+    border-left: 1px solid orange;
+    border-bottom: 1px solid orange;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    padding-top: 40px;
+}
+
+.myContainer{
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.clearFloat{
+    clear: both;
+}
+
+/*desktop*/
+@media (min-width: 992px) {
+    .col-lg{
+        width: 33.33%;
+        padding: 10px;
+        float: left;
+    }
+    .col-lg div{
+        position: relative;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        background-color: #eee;
+        width: 100%;
+    }
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md6{
+        width: 50%;
+        padding: 10px;
+        float: left;
+    }
+    .col-md12{
+        width: 100%;
+        padding: 10px;
+        float: left;
+    }
+    .col-md6 div{
+        position: relative;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        background-color: #eee;
+        width: 100%;
+    }
+    .col-md12 div{
+        position: relative;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        background-color: #eee;
+        width: 100%;
+    }
+}
+
+/*Phones*/
+@media (max-width: 761px) {
+    .col-sm{
+        width: 100%;
+        padding: 10px;
+        font-size: 120%;
+    }
+    .col-sm div{
+        position: relative;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        background-color: #eee;
+        width: 100%;
+    }
+}
